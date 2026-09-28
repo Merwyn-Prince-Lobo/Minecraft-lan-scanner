@@ -47,5 +47,9 @@ Get-NetUDPEndpoint -LocalPort 4445
 sudo tcpdump -ni any -A 'udp port 4445'
 ```
 
+```
+nmap shi for minecraft servers in lan
+```
+
 
 
