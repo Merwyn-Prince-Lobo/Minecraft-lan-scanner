@@ -47,45 +47,5 @@ Get-NetUDPEndpoint -LocalPort 4445
 sudo tcpdump -ni any -A 'udp port 4445'
 ```
 
-## Test Friend's PC
 
-### Windows
 
-```cmd
-ping FRIEND_IP
-```
-
-```powershell
-Test-NetConnection FRIEND_IP -Port MINECRAFT_PORT
-```
-
-### Ubuntu
-
-```bash
-ping FRIEND_IP
-```
-
-```bash
-nc -vz FRIEND_IP MINECRAFT_PORT
-```
-
-## Minecraft LAN
-
-```text
-Multicast: 224.0.2.60
-UDP:       4445
-```
-
-Example:
-
-```text
-10.1.3.58:51486
-```
-
-Connect using:
-
-```text
-Multiplayer → Direct Connection
-```
-
-> **Note:** Open to LAN uses a random port, not `25565`.
